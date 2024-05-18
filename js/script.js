@@ -8,10 +8,18 @@
         if
       ($(document).scrollTop() > 86){
           $("#banner").addClass("shrink");
+          $("#logoOriginal").removeClass("d-none");
+          $("#logoOriginal").addClass("d-block");
+          $("#logoWhite").removeClass("d-block");
+          $("#logoWhite").addClass("d-none");
         }
         else
         {
             $("#banner").removeClass("shrink");
+            $("#logoWhite").removeClass("d-none");
+            $("#logoWhite").addClass("d-block");
+            $("#logoOriginal").removeClass("d-block");
+            $("#logoOriginal").addClass("d-none");
         }
     });
 

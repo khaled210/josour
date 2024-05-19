@@ -994,13 +994,22 @@ ol {
 }
 /* ##### 2.0 Header Area CSS ##### */
 .nav{transition: all .5s ease-in}
-.navbar-brand {
+/* .navbar-brand {
     color: #fff;
     font-size: 25px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0
+} */
+.navbar-brand {
+    width: 170px;
+    height: auto;
+}
+.navbar-brand img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .lh-55px{line-height: 55px}
 .navbar-nav .nav-item .nav-link{
@@ -3734,7 +3743,7 @@ p.artficial:before{
 }
 .fullscreen-bg {
   position: absolute;
-    top: 0
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0px;
@@ -6658,7 +6667,7 @@ position: relative;}
 
 .comment_area .comment-content .comment-meta .comment-reply {
     font-size: 11px;
-    color: .comment_area .comment-content .comment-meta .post-author;
+    /* color: .comment_area .comment-content .comment-meta .post-author; */
     text-transform: uppercase;
 }
 
@@ -6690,7 +6699,7 @@ position: relative;}
 
 .group {
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     margin-bottom: 30px;
 }
 
@@ -6803,12 +6812,15 @@ textarea:required {
 .footer-logo{
     margin-bottom: 15px
 }
-.footer-logo a{
-    color: #fff;
-    font-size: 20px
+.footer-logo {
+    display: inline-block;
+    width: 170px;
+    height: auto;
 }
 .footer-logo img{
-    width: 40px
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .footer-side-thumbnail {
     position: absolute;
@@ -8170,3 +8182,25 @@ transform: scale3d(1, 1, 1);
 }
 }
 /* END ANIMATIONS */
+
+ul.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline-start: 16px;
+}
+li.info-list__item {
+    list-style: disc;
+}
+.iti{
+    width: 100%;
+}
+/* .info-list__item:before {
+    content: '';
+    background: #053c5c;
+    position: absolute;
+    margin-top: 1.5%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+} */

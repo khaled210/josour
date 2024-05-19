@@ -2,7 +2,10 @@
     'use strict';
 
     var $window = $(window);
-
+    // Scroll to top on page load
+    $(document).ready(function() {
+        window.scrollTo(0, 0);
+    });
      // :: Sticky Active Code
     $window.on("scroll", function(){
         if
